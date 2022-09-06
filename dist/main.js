@@ -1,1 +1,1 @@
-console.log("scuse you!");
+!function(){const e=document.getElementById("content"),t=document.createElement("h1"),n=document.createElement("img"),o=document.createElement("div");t.textContent="Brendan's Bistro",n.setAttribute("src","../src/brendan-eating.jpg"),n.setAttribute("alt","brendan-eating"),o.textContent="Hi, my name is Brendan, and I love to eat. Come on down to my bistro where you can watch me eat as well as have some food of your own if there's any left over.",e.append(t,n,o)}();
