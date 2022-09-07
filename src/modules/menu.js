@@ -1,5 +1,6 @@
 export default function displayMenu() {
     const content = document.getElementById('content');
+    const disclaimer = '* = For Bren Dog only. Please note customers are still responsible for the dish price.'
 
     class Dish {
         constructor(name, price) {
@@ -9,6 +10,7 @@ export default function displayMenu() {
         }
     }
 
+    // Create menu items
     const bolognaSandwich = new Dish('Bologna Sandwich', '$49');
     bolognaSandwich.ingredients = `Oscar Meyer bologna, miracle whip, stale wonder bread, cut in half, *`;
 
@@ -21,13 +23,12 @@ export default function displayMenu() {
     const brendanBuffet = new Dish("Brendan's Buffet", '$500');
     brendanBuffet.ingredients = 'Watch George of the Jungle himself eat his choice of bistro dishes, all Brendan can eat, leftovers up for grabs';
 
+    const dishes = [bolognaSandwich, cornDawgs, famousChili, brendanBuffet];
+
+    // Page header
     const title = document.createElement('h1');
     title.textContent = 'Menu';
     content.append(title);
-
-    const disclaimer = '* = For Bren Dog only. Please note customers are still responsible for the dish price.'
-
-    const dishes = [bolognaSandwich, cornDawgs, famousChili, brendanBuffet];
 
     for (const dish of dishes) {
         // Create page elements
