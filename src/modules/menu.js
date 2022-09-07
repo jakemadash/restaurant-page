@@ -15,7 +15,7 @@ export default function displayMenu() {
     const cornDawgs = new Dish('Corn Dawgs', '$40');
     cornDawgs.ingredients = 'corn, dawgs, side of bbq sauce, a bistro favorite!, *';
 
-    const famousChili = new Dish('Famous Chili, $100');
+    const famousChili = new Dish('Famous Chili', '$100');
     famousChili.ingredients = 'baked beans, chicken broth, dissolved Kraft singles, choice of meat, *';
 
     const brendanBuffet = new Dish("Brendan's Buffet", '$500');
