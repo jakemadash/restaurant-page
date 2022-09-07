@@ -11,7 +11,8 @@ export default function displayHome() {
     brendanEating.setAttribute('src', '../src/brendan-eating.jpg');
     brendanEating.setAttribute('alt', 'brendan-eating');
     statement.textContent = "Hi, my name is Brendan, and I love to eat. Come on down to my bistro where you can watch me eat as well as have some food of your own if there's any left over.";
-
+    statement.classList.add('statement');
+    
     // Add elements to page
     content.append(header, brendanEating, statement);
 } 

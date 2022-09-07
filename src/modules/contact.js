@@ -3,6 +3,7 @@ export default function displayContact() {
 
     // Create page elements
     const header = document.createElement('h1');
+    const coolBrendan = document.createElement('img');
     const contact = document.createElement('address');
     const email = document.createElement('a');
     const phone = document.createElement('a');
@@ -10,6 +11,8 @@ export default function displayContact() {
 
     // Add content to elements
     header.textContent = "Get At Me";
+    coolBrendan.setAttribute('src', '../src/bad-boy-brendan.jpg');
+    coolBrendan.setAttribute('alt', 'bad-boy-brendan');
     email.setAttribute('href', 'mailto:brendogfrayfray@mummyboy.biz');
     email.textContent = `brendogfrayfray@mummyboy.biz`;
     phone.setAttribute('href', 'tel:+15554206969');
@@ -17,6 +20,6 @@ export default function displayContact() {
 
 
     // Add elements to page
-    content.append(header, contact);
+    content.append(header, coolBrendan, contact);
     contact.append(email, lineBreak, phone);
 }

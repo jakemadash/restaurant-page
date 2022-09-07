@@ -21,6 +21,10 @@ export default function displayMenu() {
     const brendanBuffet = new Dish("Brendan's Buffet", '$500');
     brendanBuffet.ingredients = 'Watch George of the Jungle himself eat his choice of bistro dishes, all Brendan can eat, leftovers up for grabs';
 
+    const title = document.createElement('h1');
+    title.textContent = 'Menu';
+    content.append(title);
+
     const disclaimer = '* = For Bren Dog only. Please note customers are still responsible for the dish price.'
 
     const dishes = [bolognaSandwich, cornDawgs, famousChili, brendanBuffet];
@@ -31,6 +35,7 @@ export default function displayMenu() {
         const name = document.createElement('h3');
         const price = document.createElement('p');
         const ingredients = document.createElement('div');
+        ingredients.classList.add('ingredients');
 
         // Add content to elements
         name.textContent = dish.name;
