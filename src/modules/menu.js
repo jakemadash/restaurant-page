@@ -23,17 +23,24 @@ export default function displayMenu() {
 
     const disclaimer = '* = For Bren Dog only. Please note customers are still responsible for the dish price.'
 
-    // Create page elements
-    const header = document.createElement('h1');
-    const brendanEating = document.createElement('img');
-    const statement = document.createElement('div');
+    const dishes = [bolognaSandwich, cornDawgs, famousChili, brendanBuffet];
 
-    // Add content to elements
-    header.textContent = "Brendan's Bistro";
-    brendanEating.setAttribute('src', '../src/brendan-eating.jpg');
-    brendanEating.setAttribute('alt', 'brendan-eating');
-    statement.textContent = "Hi, my name is Brendan, and I love to eat. Come on down to my bistro where you can watch me eat as well as have some food of your own if there's any left over.";
+    for (const dish of dishes) {
+        // Create page elements
+        const container = document.createElement('div');
+        const name = document.createElement('h3');
+        const price = document.createElement('p');
+        const ingredients = document.createElement('div');
 
-    // Add elements to page
-    content.append(header, brendanEating, statement);
+        // Add content to elements
+        name.textContent = dish.name;
+        price.textContent = dish.price;
+        ingredients.textContent = dish.ingredients;
+
+        // Add elements to page
+        content.append(container, ingredients);
+        container.append(name, price);
+    }
+
+    content.append(disclaimer);
 }

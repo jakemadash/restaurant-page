@@ -3,5 +3,5 @@ import displayMenu from './modules/menu.js';
 import displayContact from './modules/contact.js';
 
 // displayHome();
-// displayMenu();
-displayContact();
+displayMenu();
+// displayContact();
